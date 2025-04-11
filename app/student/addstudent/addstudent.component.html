@@ -1,0 +1,46 @@
+
+  <body>
+    <div class="wrapper">
+      <h2>Registration</h2>
+      <form [formGroup]="studentForm" (ngSubmit)="registerStudent()">
+        <div class="input-box">
+          <input type="text" placeholder="Enter your Id" formControlName="id">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your Name" formControlName="name">
+        </div>
+        <div class="input-box">
+          <input type="text" placeholder="Enter your contact" formControlName="contact">
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Enter your marks" formControlName="marks">
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="Enter username" formControlName="username">
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Enter password" formControlName="password">
+        </div>
+        <div class="policy">
+          <input type="checkbox">
+          <h3>I accept all terms & condition</h3>
+        </div>
+        <div class="input-box button">
+          <input type="Submit" value="Register Now">
+        </div>
+        <div class="text">
+          <h3>Already have an account? <a href="#">Login now</a></h3>
+        </div>
+      </form>
+    </div>
+  </body>
+<!--
+ <form [formGroup]="studentForm" (ngSubmit)="registerStudent()">
+    Enter Id:<input type="text" formControlName="id"><br>
+    Enter Name:<input type="text" formControlName="name"><br>
+    Enter Contact:<input type="text" formControlName="contact"><br>
+    Enter Marks:<input type="text" formControlName="marks"><br>
+    Enter UserName:<input type="text" formControlName="username"><br>
+    Enter Password:<input type="text" formControlName="password"><br>
+    <button input type="submit" class="btn btn-info">Info</button>
+</form>-->

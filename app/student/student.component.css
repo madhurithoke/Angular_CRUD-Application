@@ -1,0 +1,17 @@
+
+
+/* Button Container Styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(193, 194, 237);
+    align-items: center;
+  }
+  
+  /* Button Styling */
+  .button-container button {
+    margin: 10px;
+    height: 50px;
+    width: 400px;
+  }
+  
